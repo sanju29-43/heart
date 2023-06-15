@@ -1,0 +1,84 @@
+<!DOCETYPE html>
+<html>
+<head>
+<title>css heart shape</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<style>
+body{
+margin-right:150px;
+padding-right:150px;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#0b1522;
+}
+.heart{
+height:70px;
+width:70px;
+background:#f20044;
+transform:rotate(-45deg);
+box-shadow:-10px 10px 90px #f20044;
+animation:heart 0.6s linear infinite;
+}
+@keyframes heart{
+0%{
+transform:rotate(-45deg) scale(1.07);
+}
+80%{
+transform:rotate(-45deg) scale(1.0);
+}
+100%{
+transform:rotate(-45deg) scale(0.8);
+}
+}
+
+.heart:before{
+content:'';
+position:absolute;
+height:70px;
+width:70px;
+background:#f20044;
+top:-50%;
+border-radius:50px;
+box-shadow:-10px -10px 90px #f20044;
+}
+.heart:after{
+content:'';
+position:absolute;
+height:70px;
+width:70px;
+background:#f20044;
+right:-50%;
+border-radius:50px;
+box-shadow:10px 10px 90px #f20044;
+}
+h1{
+color:lightblue;
+padding-right:50px;
+margin-right:50px;
+margin-bottom:300px;
+}
+h2{
+color:pink;
+padding-left:50px;
+margin-left:50px;
+margin-top:200px;
+}
+h3{
+color:lavender;
+align-text:center;
+padding-left:-300;
+margin-left:-300;
+margin-top:500px;
+}
+</style>
+</head>
+<body>
+<h1>my heart<br> beats for<br> you<br></h1>
+<div class="heart"></div>
+<h2>I<br> LOVE<br> YOU<br> CHINNU<br></h2>
+</body>
+<h3><center>Happy Anniversary</center></h3>
+</html>
